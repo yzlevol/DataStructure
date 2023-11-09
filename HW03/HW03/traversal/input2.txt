@@ -1,0 +1,22 @@
+10
+push a
+push b
+push c
+pop
+push d
+pop
+pop
+push e
+push f
+pop
+pop
+push g
+push h
+pop
+pop
+push i
+pop
+pop
+push j
+pop
+

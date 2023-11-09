@@ -2,76 +2,98 @@
 #include <string>
 using namespace std;
 
-class Stack { //使用链表实现栈
+class Stack
+{
 private:
-    struct Node { 
+    struct Node
+    {
         int index;
-        Node* next;
+        Node *next;
         Node(int i) : index(i), next(NULL) {}
     };
-    Node* top;
+    Node *top;
+
 public:
     Stack() : top(NULL) {}
 
-    void push(int index) {
-        Node* newNode = new Node(index);
-        if (top == NULL) {
+    void push(int index)
+    {
+        Node *newNode = new Node(index);
+        if (top == NULL)
+        {
             top = newNode;
         }
-        else {
+        else
+        {
             newNode->next = top;
             top = newNode;
         }
     }
 
-    void pop() {
-        if (top != NULL) {
-            Node* temp = top;
+    void pop()
+    {
+        if (top != NULL)
+        {
+            Node *temp = top;
             top = top->next;
             delete temp;
         }
     }
 
-    bool empty() {
+    bool empty()
+    {
         return top == NULL;
     }
 
-    int getTopIndex() {
-        if (top != NULL) {
+    int getTopIndex()
+    {
+        if (top != NULL)
+        {
             return top->index;
         }
         return -1;
     }
 };
 
-pair<int, int> longestValidParentheses(string s) {
+pair<int, int> longestValidParentheses(string s)
+{
     Stack stk;
     int maxLen = 0, maxStart = 0, lastRight = -1;
-    int start = -1;  
-    for (int i = 0; i < s.size(); i++) {
-        if (s[i] == '(') {
-            if (start == -1) {  
+    int start = -1;
+    for (int i = 0; i < s.size(); i++)
+    {
+        if (s[i] == '(')
+        {
+            if (start == -1)
+            {
                 start = i;
             }
             stk.push(i);
         }
-        else {
-            if (stk.empty()) {
+        else
+        {
+            if (stk.empty())
+            {
                 lastRight = i;
-                start = -1;  
+                start = -1;
             }
-            else {
+            else
+            {
                 stk.pop();
-                if (stk.empty()) { 
+                if (stk.empty())
+                {
                     int currentLen = i - lastRight;
-                    if (currentLen > maxLen) {
+                    if (currentLen > maxLen)
+                    {
                         maxLen = currentLen;
                         maxStart = lastRight + 1;
                     }
                 }
-                else {
+                else
+                {
                     int currentLen = i - stk.getTopIndex();
-                    if (currentLen > maxLen) {
+                    if (currentLen > maxLen)
+                    {
                         maxLen = currentLen;
                         maxStart = stk.getTopIndex() + 1;
                     }
@@ -79,10 +101,11 @@ pair<int, int> longestValidParentheses(string s) {
             }
         }
     }
-    return { maxLen, maxStart };
+    return {maxLen, maxStart};
 }
 
-int main() {
+int main()
+{
     string s;
     getline(cin, s);
     pair<int, int> result = longestValidParentheses(s);

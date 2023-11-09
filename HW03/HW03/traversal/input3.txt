@@ -1,0 +1,42 @@
+20
+push a
+push b
+push c
+push d
+push e
+push f
+push g
+pop
+pop
+pop
+push h
+push i
+pop
+pop
+pop
+pop
+push j
+push k
+pop
+pop
+pop
+push l
+push m
+push n
+pop
+pop
+push o
+pop
+pop
+push p
+push q
+pop
+pop
+push r
+pop
+pop
+push s
+pop
+push t
+pop
+

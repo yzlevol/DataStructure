@@ -106,6 +106,6 @@ int main() {
         delete[] matrix[i];
     }
     delete[] matrix;
-    cout << regionCount - 1 << endl;
+    cout << regionCount<< endl;
     return 0;
 }
