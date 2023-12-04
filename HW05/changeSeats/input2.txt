@@ -1,0 +1,7 @@
+3 4
+k j g f
+i b h e
+a l d c
+h i d k
+b l g j
+a c e f
