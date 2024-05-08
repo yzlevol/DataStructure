@@ -1,0 +1,170 @@
+84
+push a
+push b
+push c
+push d
+push e
+push f
+pop
+push g
+push h
+push i
+push j
+pop
+pop
+push k
+push l
+pop
+pop
+push m
+pop
+pop
+push n
+push o
+push p
+push q
+pop
+pop
+pop
+push r
+push s
+push t
+pop
+pop
+pop
+push u
+pop
+pop
+push v
+pop
+pop
+push w
+push x
+push y
+push z
+pop
+pop
+push A
+push B
+pop
+pop
+push C
+pop
+pop
+push D
+push E
+push F
+pop
+pop
+pop
+push G
+push H
+pop
+pop
+pop
+push I
+push J
+pop
+pop
+push K
+push L
+pop
+pop
+push M
+pop
+pop
+push N
+push O
+push P
+pop
+pop
+push Q
+pop
+pop
+push R
+pop
+pop
+push S
+push T
+push U
+push V
+push W
+pop
+pop
+push X
+push Y
+pop
+pop
+push Z
+pop
+pop
+push `
+push 1
+push 2
+pop
+pop
+pop
+push 3
+push 4
+pop
+pop
+pop
+push 5
+pop
+pop
+push 6
+push 7
+pop
+pop
+push 8
+push 9
+push 0
+pop
+pop
+push -
+pop
+pop
+push =
+pop
+push ~
+push !
+push @
+push #
+pop
+pop
+push $
+push %
+pop
+pop
+push ^
+pop
+pop
+push &
+push *
+pop
+pop
+push (
+push )
+pop
+pop
+push _
+pop
+pop
+push +
+pop
+push [
+pop
+pop
+push ]
+push {
+pop
+pop
+push }
+push \
+pop
+pop
+push |
+pop
+pop
+pop
+
